@@ -1,0 +1,95 @@
+:root{
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "inter"; 
+/*colocamos variáveis com as cores que vamos usar no projeto*/
+/*assim fica mais fácil posteriormente*/
+/* BEM PARECIDO COM O ARDUÍNO OS CÓDIGOS AQUI, mas la colocamos #define para fazer algo assim*/
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color:var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+.principal{
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container { 
+    height: 100vh; /*100vh significa usar uma dimensão de tela inteira, para aparecer toda a imagem em cada seção*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    /*dividi em duas partes a divisão container*/
+} 
+
+.container-botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    /*utilizamos a cor de fundo azul, ajustamos a borda arredondada, a margem interna entre a escrita e a borda, 
+    a cor do texto branca e trouxe abaixo da imagem do Alura Plus. */
+    margin-bottom: 1em;
+
+}
+
+.botao-secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-aviso{
+    font-size: 12px;
+    color: var(--branco-principal);
+}
+
+.container-titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container-imagem { 
+    margin: 1em 0 2em 0; 
+}
+
+.container-caixa { 
+    margin: 0 6em; 
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0,1em;
+}
+
+.descricao-texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario-imagem{
+    width: 80%;
+}
